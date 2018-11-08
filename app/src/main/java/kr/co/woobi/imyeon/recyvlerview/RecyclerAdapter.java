@@ -23,7 +23,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter{
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflate = LayoutInflater.from(viewGroup.getContext());
         View view=inflate.inflate(R.layout.item_cardlayout,viewGroup,false);
-
         return new MyViewHoler(view);
     }
 
@@ -37,10 +36,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter{
 
     @Override
     public int getItemCount() {
-
         return arrayList.size();
     }
-
 
     private class MyViewHoler extends RecyclerView.ViewHolder {
         public ImageView item_lmage;
